@@ -68,8 +68,8 @@ public class DataWindow extends JFrame {
 		contentPane.setLayout(null);
 
 		JLabel lblNewLabel = new JLabel("Result");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
-		lblNewLabel.setBounds(324, 29, 68, 41);
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 23));
+		lblNewLabel.setBounds(324, 29, 95, 41);
 		contentPane.add(lblNewLabel);
 
 		JLabel validLinks = new JLabel("New label");
@@ -91,14 +91,14 @@ public class DataWindow extends JFrame {
 		allLinks.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		allLinks.setBounds(565, 94, 165, 22);
 		contentPane.add(allLinks);
-		allLinks.setText("Number of all links: " + Test1.noOfAllLinks());
+		allLinks.setText("Number of all links: " + Main.noOfAllLinks());
 
 		JLabel time = new JLabel("New label");
 		time.setForeground(new Color(0, 0, 0));
 		time.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		time.setBounds(46, 126, 196, 22);
 		contentPane.add(time);
-		time.setText("Execution time: " + Test1.time() + " sec");
+		time.setText("Execution time: " + Main.time() + " sec");
 
 		JLabel threads = new JLabel("New label");
 		threads.setForeground(new Color(0, 0, 0));
